@@ -29,7 +29,7 @@ export default {
         },
         stopTimer() {
             clearInterval(this.timer)
-            console.log(this.reactionTimer)
+            this.$emit('end', this.reactionTimer)
         }
     }
 }
@@ -39,7 +39,7 @@ export default {
     width: 400px;
     border-radius: 20px;
     background: #739f93;
-    color: #f5f5f5;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 100px 0;
